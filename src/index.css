@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --font-arabic: "Cairo", "Tahoma", sans-serif;
+  --font-display: "Aref Ruqaa", "Cairo", serif;
+
+  --color-parchment-50: #fbf4e2;
+  --color-parchment-100: #f4e6c3;
+  --color-parchment-200: #ecd6a3;
+  --color-parchment-300: #dfc07d;
+  --color-parchment-400: #cba25c;
+  --color-parchment-500: #b3824a;
+
+  --color-wood-600: #6b4226;
+  --color-wood-700: #543219;
+  --color-wood-800: #3c2313;
+  --color-wood-900: #26150c;
+
+  --color-sea-400: #3f8fa6;
+  --color-sea-500: #2b6f85;
+  --color-sea-600: #1f5568;
+  --color-sea-700: #163e4d;
+
+  --color-gold-400: #e2b34a;
+  --color-gold-500: #cc9531;
+  --color-gold-600: #a67320;
+}
+
+html,
+body {
+  font-family: var(--font-arabic);
+  background-color: var(--color-parchment-100);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Aged parchment paper background */
+.bg-parchment {
+  background-color: #ecd9ab;
+  background-image:
+    radial-gradient(ellipse at top left, rgba(255, 255, 255, 0.25), transparent 55%),
+    radial-gradient(ellipse at bottom right, rgba(107, 66, 38, 0.18), transparent 60%),
+    url("/images/parchment-texture.jpg");
+  background-size: cover, cover, cover;
+  background-blend-mode: normal, normal, multiply;
+}
+
+.bg-deepsea {
+  background: radial-gradient(ellipse at top, #1f5568 0%, #0f2f3a 55%, #071a20 100%);
+}
+
+.rope-border {
+  position: relative;
+  border: 3px dashed var(--color-wood-700);
+  border-radius: 1rem;
+}
+
+.torn-edge {
+  -webkit-mask-image: linear-gradient(black, black);
+  mask-image: linear-gradient(black, black);
+  filter: drop-shadow(0 6px 10px rgba(38, 21, 12, 0.35));
+}
+
+.map-dotted-path {
+  background-image: radial-gradient(circle, var(--color-wood-700) 1.5px, transparent 1.6px);
+  background-size: 10px 10px;
+}
+
+/* Custom scrollbar for a subtler nautical feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-parchment-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-wood-600);
+  border-radius: 999px;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-page {
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: none !important;
+    border-width: 2px !important;
+    page-break-after: always;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+}
