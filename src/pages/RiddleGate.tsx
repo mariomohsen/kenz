@@ -48,7 +48,7 @@ export default function RiddleGate() {
           </div>
 
           <p className="mb-1 font-display text-sm tracking-widest text-wood-700">
-            ⚓ خريطة الكنز المفقود ⚓
+            ⚓ خريطة العودة للوطن ⚓
           </p>
           <h1 className="font-display text-2xl sm:text-3xl font-bold leading-relaxed text-wood-900">
             {CAMP_TITLE}
@@ -92,13 +92,13 @@ export default function RiddleGate() {
         </div>
 
         <p className="mt-4 text-center text-xs text-parchment-200/80">
-          مؤتمر الصيف للشباب 2026 — رحلة البحر والقراصنة
+          مؤتمر الصيف للشباب 2026 — رحلة العودة للوطن
         </p>
-        <p className="mt-1 text-center text-xs">
+        {/* <p className="mt-1 text-center text-xs">
           <a href="#/print" className="text-parchment-300/70 underline">
             صفحة الطباعة لكل الفرق (للمنظمين)
           </a>
-        </p>
+        </p> */}
       </div>
     </div>
   );
