@@ -29,8 +29,8 @@ export default function PrintTeamPage() {
   return (
     <div className="min-h-screen bg-parchment-100 py-6">
       <div className="no-print mx-auto mb-4 flex max-w-2xl items-center justify-between gap-3 px-4">
-        <Link to="/print" className="text-sm font-semibold text-wood-700 underline">
-          ← كل الفرق
+        <Link to="/" className="text-sm font-semibold text-wood-700 underline">
+          ← رجوع للصفحة الرئيسية
         </Link>
         <button
           onClick={() => window.print()}
@@ -67,7 +67,7 @@ export default function PrintTeamPage() {
 
         <RopeDivider className="mt-4 mb-2" />
         <p className="text-center text-xs text-wood-600">
-          بارك الله في خدمتكم — كنيسة الشباب • مؤتمر 2026
+          كنيسة رئيس الملائكة ميخائيل • مؤتمر 2026
         </p>
       </div>
     </div>
