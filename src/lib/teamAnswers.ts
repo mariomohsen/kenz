@@ -16,10 +16,10 @@ export const TEAM_ANSWERS: Record<TeamKey, string> = {
 };
 
 export const TEAM_NAMES: Record<TeamKey, string> = {
-  A: "أ",
-  B: "ب",
-  C: "ج",
-  D: "د",
+  A: "A",
+  B: "B",
+  C: "C",
+  D: "D",
 };
 
 export const TEAM_COLORS: Record<TeamKey, { accent: string; soft: string; text: string }> = {
