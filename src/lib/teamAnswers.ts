@@ -8,11 +8,11 @@ export type TeamKey = "A" | "B" | "C" | "D";
  * Comparison is case-insensitive, trims whitespace and normalizes Arabic
  * diacritics/letter variants, so you can just type the plain expected answer.
  */
-export const TEAM_ANSWERS: Record<TeamKey, string[]> = {
-  A: ["الساعة", "الساعه"],
-  B: ["الحفره", "الحفرة"],
-  C: ["الماية", "المايه", "المياه"],
-  D: ["المريخ"],
+export const TEAM_ANSWERS: Record<TeamKey, string> = {
+  A: "الحفرة",
+  B: "الساعة",
+  C: "الماء",
+  D: "المريخ",
 };
 
 export const TEAM_NAMES: Record<TeamKey, string> = {
@@ -37,11 +37,9 @@ export function findTeamForAnswer(rawAnswer: string): TeamKey | null {
   const normalized = normalizeArabic(rawAnswer);
   if (!normalized) return null;
 
-  for (const [team, answers] of Object.entries(TEAM_ANSWERS) as [TeamKey, string[]][]) {
-    if (answers.some((answer) => normalizeArabic(answer) === normalized)) {
-      return team;
-    }
-  }
+  const entry = (Object.entries(TEAM_ANSWERS) as [TeamKey, string][]).find(
+    ([, answer]) => normalizeArabic(answer) === normalized,
+  );
 
-  return null;
+  return entry ? entry[0] : null;
 }
