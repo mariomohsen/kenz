@@ -18,6 +18,7 @@ const DAY_TWO_SCHEDULE: DayTwoEvent[] = [
   { time: "__:__", title: "أضف اسم الفعالية هنا", detail: "أضف التفاصيل هنا", icon: "★" },
   { time: "__:__", title: "أضف اسم الفعالية هنا", detail: "أضف التفاصيل هنا", icon: "✦" },
   { time: "__:__", title: "أضف اسم الفعالية هنا", detail: "أضف التفاصيل هنا", icon: "✧" },
+  { time: "__:__", title: "أضف اسم الفعالية هنا", detail: "أضف التفاصيل هنا", icon: "✧" },
 ];
 
 export default function DayTwoPage() {
@@ -45,15 +46,15 @@ export default function DayTwoPage() {
           <Link to="/schedule" className="circus-ticket circus-ticket-light">
             ← اليوم الأول
           </Link>
-          <span className="circus-team-mark">فريق {TEAM_NAMES[team]}</span>
+          {/* <span className="circus-team-mark">فريق {TEAM_NAMES[team]}</span> */}
           <span className="circus-nav-label">مؤتمر الشباب 2026</span>
         </nav>
 
         <header className="circus-hero mt-6 px-5 py-12 text-center sm:px-12 sm:py-16">
-          <p className="circus-kicker">ليلة واحدة تحت الخيمة</p>
-          <h1 className="circus-title mt-3">برنامج اليوم الثاني</h1>
+          {/* <p className="circus-kicker">ليلة واحدة تحت الخيمة</p> */}
+          <h1 className="circus-title mt-3">جدول اليوم الثاني</h1>
           <div className="circus-star-line mx-auto mt-5" aria-hidden="true">✦ ━━━━━ ✦ ━━━━━ ✦</div>
-          <p className="circus-subtitle mt-5">البرنامج قيد الإعداد — نلتقي عند أضواء السيرك</p>
+          {/* <p className="circus-subtitle mt-5">البرنامج قيد الإعداد — نلتقي عند أضواء السيرك</p> */}
         </header>
 
         <div className="circus-bunting" aria-hidden="true">
@@ -62,7 +63,7 @@ export default function DayTwoPage() {
 
         <section className="circus-schedule mt-8 px-4 py-7 sm:px-10 sm:py-10" aria-labelledby="day-two-schedule">
           <div className="text-center">
-            <p className="circus-kicker">الحلقة الثانية</p>
+            {/* <p className="circus-kicker">الحلقة الثانية</p> */}
             <h2 id="day-two-schedule" className="circus-section-title mt-2">مواعيد العروض والفعاليات</h2>
           </div>
 
@@ -84,7 +85,7 @@ export default function DayTwoPage() {
 
         <footer className="circus-footer mt-8 text-center">
           <div className="circus-star-line" aria-hidden="true">✦ ━━━━━ ✦ ━━━━━ ✦</div>
-          <p className="mt-4">ننتظركم في العرض القادم</p>
+          {/* <p className="mt-4">ننتظركم في العرض القادم</p> */}
         </footer>
       </div>
     </main>
