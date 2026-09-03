@@ -14,7 +14,7 @@ interface DayTwoEvent {
 const DAY_TWO_SCHEDULE: DayTwoEvent[] = [
   { time: "8:00 - 10:00", title: "قداس", detail: "", icon: "⛪" },
   { time: "10:00 - 11:00", title: "فطار", detail: "", icon: "😋" },
-  { time: "10:00 - 12:00", title: "افتتاحية", detail: "", icon: "🏁" },
+  { time: "11:00 - 12:00", title: "افتتاحية", detail: "", icon: "🏁" },
   { time: "12:00 - 1:00", title: "دراسة كتاب 1", detail: "", icon: "📖" },
   { time: "1:00 - 1:30", title: "راحة", detail: "", icon: "💤" },
   { time: "1:30 - 3:00", title: "ورش عمل", detail: "", icon: "💪" },
