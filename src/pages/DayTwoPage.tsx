@@ -12,13 +12,21 @@ interface DayTwoEvent {
 
 // Edit these entries to build the complete second-day schedule.
 const DAY_TWO_SCHEDULE: DayTwoEvent[] = [
-  { time: "__:__", title: "أضف اسم الفعالية هنا", detail: "أضف التفاصيل هنا", icon: "✦" },
-  { time: "__:__", title: "أضف اسم الفعالية هنا", detail: "أضف التفاصيل هنا", icon: "★" },
-  { time: "__:__", title: "أضف اسم الفعالية هنا", detail: "أضف التفاصيل هنا", icon: "✧" },
-  { time: "__:__", title: "أضف اسم الفعالية هنا", detail: "أضف التفاصيل هنا", icon: "★" },
-  { time: "__:__", title: "أضف اسم الفعالية هنا", detail: "أضف التفاصيل هنا", icon: "✦" },
-  { time: "__:__", title: "أضف اسم الفعالية هنا", detail: "أضف التفاصيل هنا", icon: "✧" },
-  { time: "__:__", title: "أضف اسم الفعالية هنا", detail: "أضف التفاصيل هنا", icon: "✧" },
+  { time: "8:00 - 10:00", title: "قداس", detail: "", icon: "⛪" },
+  { time: "10:00 - 11:00", title: "فطار", detail: "", icon: "😋" },
+  { time: "10:00 - 12:00", title: "افتتاحية", detail: "", icon: "🏁" },
+  { time: "12:00 - 1:00", title: "دراسة كتاب 1", detail: "", icon: "📖" },
+  { time: "1:00 - 1:30", title: "راحة", detail: "", icon: "💤" },
+  { time: "1:30 - 3:00", title: "ورش عمل", detail: "", icon: "💪" },
+  { time: "3:00 - 4:00", title: "غداء", detail: "", icon: "🍴" },
+  { time: "4:00 - 4:30", title: "راحة", detail: "", icon: "💤" },
+  { time: "4:30 - 5:30", title: "دراسة كتاب 2", detail: "", icon: "📖" },
+  { time: "5:30 - 6:30", title: "بحر", detail: "", icon: "🏖" },
+  { time: "6:30 - 7:30", title: "راحة", detail: "", icon: "💤" },
+  { time: "7:30 - 8:00", title: "غروب", detail: "", icon: "🌆" },
+  { time: "8:00 - 9:00", title: "ورش عمل", detail: "", icon: "💪" },
+  { time: "9:00 - 9:30", title: "عشاء", detail: "", icon: "🥪" },
+  { time: "9:30 - 12:30", title: "حفلة السمر", detail: "", icon: "🏃‍♂️" },
 ];
 
 export default function DayTwoPage() {
