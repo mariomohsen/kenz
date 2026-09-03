@@ -206,12 +206,13 @@ body {
 
 .circus-title,
 .circus-section-title {
-  color: var(--circus-red);
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 900;
   text-shadow: 0 0 18px rgba(255, 217, 142, 0.42);
 }
 
+.circus-title { color: var(--circus-cream); }
+.circus-section-title { color: var(--circus-red); }
 .circus-title { font-size: clamp(2.4rem, 8vw, 4.5rem); line-height: 1.1; }
 .circus-section-title { font-size: clamp(1.45rem, 4vw, 2.2rem); }
 .circus-subtitle { color: #ead8b8; }
