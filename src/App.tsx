@@ -3,6 +3,7 @@ import RiddleGate from "@/pages/RiddleGate";
 import TeamPage from "@/pages/TeamPage";
 import PrintIndex from "@/pages/PrintIndex";
 import PrintTeamPage from "@/pages/PrintTeamPage";
+import DayTwoPage from "@/pages/DayTwoPage";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<RiddleGate />} />
         <Route path="/schedule" element={<TeamPage />} />
+        <Route path="/schedule/day-two" element={<DayTwoPage />} />
         <Route path="/print" element={<PrintIndex />} />
         <Route path="/print/:teamSlug" element={<PrintTeamPage />} />
       </Routes>

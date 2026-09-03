@@ -28,6 +28,14 @@ export default function TeamPage() {
       <div className="mx-auto max-w-2xl px-4 pt-8 sm:pt-12">
         {/* Header / confirmation */}
         <div className="bg-parchment torn-edge rope-border px-5 py-6 text-center sm:px-8">
+          <div className="no-print mb-5 flex justify-start">
+            <Link
+              to="/schedule/day-two"
+              className="inline-flex items-center gap-2 rounded-md border-2 border-gold-600 bg-gold-500 px-4 py-2 text-sm font-bold text-wood-900 shadow-sm transition hover:bg-gold-400"
+            >
+              🎪 برنامج اليوم الثاني
+            </Link>
+          </div>
           <div className="mx-auto mb-2 flex justify-center">
             <CompassRose className="h-14 w-14" />
           </div>

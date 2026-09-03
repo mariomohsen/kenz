@@ -105,3 +105,181 @@ body {
     margin: 10mm;
   }
 }
+
+/* Vintage Night Circus day-two theme */
+.circus-page {
+  --circus-red: #8b1a1a;
+  --circus-cream: #f5ebd8;
+  --circus-gold: #c9a227;
+  --circus-navy: #10121c;
+  --circus-light: #ffd98e;
+  color: var(--circus-cream);
+  background-color: var(--circus-navy);
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(255, 217, 142, 0.14) 0 1px, transparent 2px),
+    radial-gradient(circle at 82% 10%, rgba(255, 217, 142, 0.16) 0 1px, transparent 2px),
+    radial-gradient(circle at 62% 42%, rgba(255, 217, 142, 0.12) 0 1px, transparent 2px),
+    radial-gradient(ellipse at 50% -10%, #3b2530 0%, var(--circus-navy) 52%);
+  background-size: 137px 113px, 181px 157px, 223px 191px, auto;
+  font-family: "Lora", Georgia, serif;
+}
+
+.circus-nav {
+  border-bottom: 2px solid var(--circus-gold);
+  padding-bottom: 1rem;
+}
+
+.circus-nav-label,
+.circus-team-mark,
+.circus-kicker {
+  color: var(--circus-light);
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.circus-team-mark {
+  color: var(--circus-cream);
+  font-size: 0.9rem;
+}
+
+.circus-ticket {
+  border: 1px solid var(--circus-gold);
+  color: var(--circus-cream);
+  display: inline-flex;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.circus-ticket::before,
+.circus-ticket::after {
+  background: var(--circus-navy);
+  border: 1px solid var(--circus-gold);
+  border-radius: 50%;
+  content: "";
+  height: 0.55rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.55rem;
+}
+
+.circus-ticket::before { left: -0.35rem; }
+.circus-ticket::after { right: -0.35rem; }
+
+.circus-ticket-light:hover { background: var(--circus-red); }
+
+.circus-hero {
+  border: 4px double var(--circus-gold);
+  box-shadow: 0 0 55px rgba(255, 217, 142, 0.12), inset 0 0 45px rgba(139, 26, 26, 0.4);
+  position: relative;
+}
+
+.circus-hero::before,
+.circus-hero::after {
+  border: 1px solid rgba(201, 162, 39, 0.65);
+  content: "";
+  inset: 0.65rem;
+  pointer-events: none;
+  position: absolute;
+}
+
+.circus-hero::after {
+  background: radial-gradient(ellipse at 50% 5%, rgba(255, 217, 142, 0.24), transparent 47%);
+  border: 0;
+}
+
+.circus-hero > * { position: relative; z-index: 1; }
+
+.circus-title,
+.circus-section-title {
+  color: var(--circus-cream);
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  text-shadow: 0 0 18px rgba(255, 217, 142, 0.42);
+}
+
+.circus-title { font-size: clamp(2.4rem, 8vw, 4.5rem); line-height: 1.1; }
+.circus-section-title { font-size: clamp(1.45rem, 4vw, 2.2rem); }
+.circus-subtitle { color: #ead8b8; }
+.circus-star-line { color: var(--circus-light); letter-spacing: 0.12em; }
+
+.circus-bunting {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 1.5rem;
+}
+
+.circus-bunting span {
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
+  border-top: 1.8rem solid var(--circus-red);
+  margin: 0 0.2rem;
+  width: 0;
+}
+
+.circus-bunting span:nth-child(even) { border-top-color: var(--circus-cream); }
+.circus-bunting span:nth-child(3n) { border-top-color: var(--circus-gold); }
+
+.circus-schedule {
+  background-color: var(--circus-cream);
+  background-image: repeating-linear-gradient(135deg, transparent 0 4.5rem, rgba(139, 26, 26, 0.06) 4.5rem 5rem);
+  border: 5px solid var(--circus-red);
+  border-radius: 1.25rem 1.25rem 2.4rem 2.4rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3), inset 0 0 0 3px var(--circus-gold);
+  color: var(--circus-navy);
+}
+
+.circus-schedule .circus-kicker { color: var(--circus-red); }
+
+.circus-event {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.45);
+  border: 2px solid var(--circus-gold);
+  border-radius: 0.7rem;
+  display: flex;
+  gap: 1rem;
+  min-height: 5.4rem;
+  padding: 0.85rem 1rem;
+  position: relative;
+}
+
+.circus-event::after {
+  background-image: radial-gradient(circle, var(--circus-red) 1.5px, transparent 1.7px);
+  background-size: 8px 8px;
+  bottom: -0.35rem;
+  content: "";
+  height: 0.35rem;
+  left: 1rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.circus-event-icon {
+  align-items: center;
+  background: var(--circus-red);
+  border: 2px solid var(--circus-gold);
+  border-radius: 50%;
+  color: var(--circus-light);
+  display: flex;
+  flex: 0 0 2.8rem;
+  font-size: 1.2rem;
+  height: 2.8rem;
+  justify-content: center;
+  width: 2.8rem;
+}
+
+.circus-event h3 { color: var(--circus-red); font-family: "Playfair Display", Georgia, serif; font-size: 1.08rem; font-weight: 800; }
+.circus-event time { color: #634d1c; font-size: 0.85rem; font-weight: 700; white-space: nowrap; }
+.circus-event p { color: #6a5a40; font-size: 0.84rem; margin-top: 0.25rem; }
+.circus-footer { color: var(--circus-light); font-size: 0.9rem; }
+
+@media (max-width: 480px) {
+  .circus-nav-label { display: none; }
+  .circus-event { align-items: flex-start; }
+  .circus-event-icon { flex-basis: 2.4rem; height: 2.4rem; width: 2.4rem; }
+}
