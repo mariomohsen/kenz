@@ -38,7 +38,6 @@ export default function DayTwoPage() {
   return (
     <main className="circus-page min-h-screen overflow-hidden px-4 pb-14 pt-5 sm:px-6 sm:pt-8">
       <div className="circus-day-backdrop" aria-hidden="true">
-        <div className="circus-tent" />
       </div>
       <div className="circus-lights" aria-hidden="true" />
       <div className="relative mx-auto max-w-3xl">
